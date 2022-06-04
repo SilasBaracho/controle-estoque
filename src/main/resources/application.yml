@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/zitrusdb
+    username: postgres
+    password: docker
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties.hibernate.show_sql: true
+    properties.hibernate.format_sql: true
+
+  h2:
+    console:
+      enabled: true
+      path: /h2
